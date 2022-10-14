@@ -1,0 +1,65 @@
+body{
+    background-color: #ffffff
+}
+h1{
+    margin-left: 850px;
+    margin-right: 850px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1:hover{
+    color: red;
+    cursor: pointer;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-calendario{
+    display: grid;
+    grid-gap: 5px;
+    width: 850px;
+    height: 850px;
+    /* border: 1px solid #122415; */
+    grid-template-columns: repeat(7, 115px);
+    grid-template-rows: repeat(8, 100px);
+    grid-template-areas: "header header header header header header header";
+    justify-content: center;
+
+}
+.header{
+    grid-column-start: header;
+    grid-column-end: header;
+}
+.box-style{
+    background-color: white;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 10-px;
+}
+.header{
+    background-color: rgb(192, 183, 183);
+}
+.box-header2{
+    background-color: red;
+}
+.box-header9{
+    background-color: red;
+}
+
+.box-header16{
+    background-color: red;
+}
+.box-header23{
+    background-color: red;
+}
+.box-header30{
+    background-color: rgb(92, 44, 44);
+}
+

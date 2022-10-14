@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/formulario.css">
+    <title>FormularioWeb</title>
+</head>
+<body>
+    
+    <div class="main-content">
+        <div class="form-title">
+            <div class="form-box">
+                <h1>Compra de Productos <p>(formulario)</p> </h1>
+                <form class="form-registro">
+                    <label>Nombres</label>
+                    <input type="text" placeholder="Ingrese su(s) Nombres"> <br> <br>
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Ingrese su(s) Apellidos"> <br> <br>
+                    
+                    <label>Producto</label> <br> <br>
+                    <input type="checkbox" name="Lunes">Abono sólido compost<br>
+                    <input type="checkbox" name="Martes">Abono sólido tipo vermicompost<br>
+                    <input type="checkbox" name="Miercoles">Abono líquido mineral<br>
+                    <input type="checkbox" name="Jueves">Abono líquido básico<br>
+                    <input type="checkbox" name="Viernes">Abono líquido lixiviado<br><br>
+                    <label>N. de Productos</label>
+                    <input type="number" placeholder="Ingrese Cantidad"> <br> <br>
+                    <label>Centro </label> <br> <br>
+                    <input type="radio" name="IPS Centro" value="IPS Ce">Yamboró<br>
+                    <input type="radio" name="IPS Centro" value="IPS Ce">SENA Centro<br><br>
+
+                    <label>Seleccione Dia</label> <br> 
+                    <select name="Servicio">
+                        <option value="Carina Mendez Solé">Lunes</option>
+                        <option value="Margarita Gonzalo Angulo">Martes</option>
+                        <option value="Remigio Varela Bárcena">Miercoles</option>
+                        <option value="Hernán Patiño Gilabert">Jueves</option>
+                        <option value="Daniela Vilalta Río">Viernes</option>
+                    </select> <br> <br>
+                    <label>Observaciones</label> <br>
+                    <textarea name="Observaciones" cols="40" rows="10" placeholder="Observaciones (Max. 200 carácteres)"></textarea> <br> <br>
+                    <input class="boton" type="submit" value="Enviar">
+                    </form>
+                    
+
+            </div>    
+        </div>
+    </div>
+
+
+</body>
+</html>

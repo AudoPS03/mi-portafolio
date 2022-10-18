@@ -1,0 +1,41 @@
+body{
+    background-color: beige;
+}
+.page-content{
+    display: grid;
+        grid-template: "header"
+                        "img-logo"
+                        "img-articulo"
+                        "titulo-articulo"
+                        "texto-articulo"
+}
+.header{
+    grid-area: header;
+    height: 80px;
+    background-color: rgb(184, 36, 36);
+    text-align: center;
+}
+.img-logo{
+    grid-area: img-logo;
+    background-color: rgb(10, 80, 112);
+    height: 80px;
+    text-align: center;
+}
+.img-articulo{
+    grid-area: img-articulo;
+    background-color: aquamarine;
+    height: 250px;
+    text-align: center;
+}
+.titulo-articulo{
+    grid-area: titulo-articulo;
+    background-color: goldenrod;
+    height: 100px;
+    text-align: center;
+}
+.texto-artiuclo{
+    grid-area: texto-articulo;
+    background-color: rgb(148, 148, 148);
+    height: 350px;
+    text-align: center;
+}

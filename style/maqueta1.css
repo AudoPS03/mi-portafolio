@@ -37,5 +37,6 @@ body{
     grid-area: texto-articulo;
     background-color: rgb(148, 148, 148);
     height: 350px;
+    width: 50%;
     text-align: center;
 }

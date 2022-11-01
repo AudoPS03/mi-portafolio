@@ -1,0 +1,110 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page-viewport{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-content{
+    width: 90%;
+}
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-header {
+    margin-top: 50px;
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template: "main-logo main-menu" 110px /
+                    180px     1fr;
+    
+
+}
+.main-logo {
+    grid-area: main-logo;
+    margin-right: 30px;
+    background-color: rgb(158, 158, 158);
+}
+.main-menu {
+    grid-area: main-menu;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(158, 158, 158);
+}
+.box-img-principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-principal {
+    margin: 125px 0;
+    width: 100%;
+    height: 500px;
+}
+.img-primaria{
+    width: 100%;
+}
+.articulos{
+    display: grid;
+    grid-template: "article-1 article-2 article-3" /
+                    1fr       1fr       1fr
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    width: 350px;
+    height: 250px;
+    background-color: red;
+    margin: 15px 0;
+}
+.titulo-img{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    margin: 15px 0;
+}
+.texto-img{
+    width: 350px;
+    height: 300px;
+    background-color: green;
+    margin: 15px 0;
+}
+.txt-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6em;
+    font-family: Helvetica, sans-serif;
+}
+@media only screen and (max-width: 1226px) {
+    .articulos {
+        display: grid;
+        grid-template: "article-1 article-2" /
+                        1fr       1fr;   
+    }
+}
+@media only screen and (max-width: 850px) {
+    .articulos {
+        display: grid;
+        grid-template: "article-1"  /
+                        1fr;   
+    }
+}
+
+
+

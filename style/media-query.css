@@ -34,12 +34,7 @@ a{
     color:rgb(0, 0, 0);
     text-decoration: none;
 }
-.menu-bloque-oculto{
-    display: none;
-}
-.menu-bloque-visible{
-    display: block;
-}
+
 @media only screen and (max-width:1000px) {
     .bar-menu{
         display: block;
@@ -58,4 +53,13 @@ a{
         background-color:rgba(134, 125, 255, 0.418);
         cursor: pointer;
     }
+    
+    .menu-bloque-visible{
+        display: block;
+    }
+
+    .menu-bloque-oculto{
+        display: none;
+
+}
 }

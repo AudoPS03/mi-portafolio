@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+    display: grid;
+    grid-template: "box-presentacion box-imagne" / 
+                    1fr              1fr
+}
+.box-presentacion {
+    grid-area: box-presentacion;
+    display: flex;
+    color: white;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    width: 50%; 
+    
+}
+.box-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.text-presentacion {
+    font-family: 'Bebas Neue';
+}
+/* bebas-neue-regular - latin */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/bebas-neue-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+  }

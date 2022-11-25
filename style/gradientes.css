@@ -7,7 +7,7 @@
     height: 100vh;
     background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
     display: grid;
-    grid-template: "box-presentacion box-imagne" / 
+    grid-template: "box-presentacion box-imagen" / 
                     1fr              1fr
 }
 .box-presentacion {
@@ -19,27 +19,46 @@
     align-items: center;
     flex-direction: column;
 }
-img {
+.box-imagen {
+    grid-area: box-imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-yo {
     width: 350px;
     border-radius: 50%; 
     
 }
-.box-imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 50px;
-}
 .text-presentacion {
     font-family: 'Bebas Neue';
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 @media only screen and (max-width: 700px) {
     .box-1 {
         background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
         display: grid;
         grid-template: "box-presentacion"
-                        "box-imagne" / 
+                        "box-imagen" / 
                         1fr;
+    }
+    .box-presentacion {
+        margin-top: 20px;
+    }
+    .box-imagen {
+        margin-bottom: 150px;
+    }
+    .img-yo{
+        width: 300px;
     }
 }
 
@@ -56,3 +75,5 @@ img {
          url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
   }
+
+ 

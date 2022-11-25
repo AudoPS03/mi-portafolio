@@ -10,6 +10,24 @@
     grid-template: "box-presentacion box-imagen" / 
                     1fr              1fr
 }
+.main-menu-oculto{
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    width: 300px;
+    top: 0;
+    left: -300px;
+    transition: left 1200ms;
+}
+.main-menu-visible{
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    width: 300px;
+    top: 0;
+    left: 0px;
+    transition: left 1200ms;
+}
 .box-presentacion {
     grid-area: box-presentacion;
     display: flex;
@@ -43,6 +61,38 @@ button {
     display: inline-block;
     font-size: 16px;
 }
+.box-menu{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: fixed;
+    width: 100px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box-menu:hover{
+    background-color: rgba(221, 221, 221, 0.432);
+    transition: 1000ms;
+}
+.menu-pro{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+.menu-pro:hover{
+    color: black;
+}
+.menu-text{
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: black;
+    
+}
+
 @media only screen and (max-width: 700px) {
     .box-1 {
         background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);

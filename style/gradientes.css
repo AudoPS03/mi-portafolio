@@ -20,7 +20,8 @@
     flex-direction: column;
 }
 img {
-    width: 50%; 
+    width: 350px;
+    border-radius: 50%; 
     
 }
 .box-imagen {
@@ -32,6 +33,16 @@ img {
 .text-presentacion {
     font-family: 'Bebas Neue';
 }
+@media only screen and (max-width: 700px) {
+    .box-1 {
+        background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+        display: grid;
+        grid-template: "box-presentacion"
+                        "box-imagne" / 
+                        1fr;
+    }
+}
+
 /* bebas-neue-regular - latin */
 @font-face {
     font-family: 'Bebas Neue';

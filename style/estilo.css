@@ -2,136 +2,199 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #e7e3f1; 
-}
-.main-nav{
+.box-1 {
     width: 100%;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.103);
+    height: 100vh;
+    background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+    display: grid;
+    grid-template: "box-presentacion box-imagen" / 
+                    1fr              1fr
 }
-
-.bar-menu{
-    display: none;
+.main-menu-oculto{
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    width: 300px;
+    top: 0;
+    left: -300px;
+    transition: left 1200ms;
 }
-
-ul{
+.main-menu-visible{
+    position: fixed;
+    height: 100vh;
+    background-color: white;
+    width: 300px;
+    top: 0;
+    left: 0px;
+    transition: left 1200ms;    
+}
+.main-menu{
+    margin-top: 70px;
+    margin-left: 0;
+    font-family: "Quicksand";
+    font-size: 1.1em; 
+}
+.ul-menu-style{
+    list-style: none; 
+}
+.li-main-menu{
+    padding: 12px;
+    cursor: pointer;
+    width: 75%;
+    background-color: white;
+    transition: width 1000ms, background-color 800ms, color 300ms;
+}
+.li-main-menu:hover{
+    background-color: rgba(185, 185, 185, 0.432);
+    width: 92%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.box-presentacion {
+    grid-area: box-presentacion;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-imagen {
+    grid-area: box-imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-yo {
+    width: 350px;
+    border-radius: 50%; 
+}
+.text-presentacion {
+    font-family: "Lexend Deca";
+    font-size: 2em;
+}
+.text-presentacion2{
+    font-family: "Quicksand";
+    font-size: 1.9em;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-}
-li{
+    text-decoration: none;
     display: inline-block;
-    margin-top: 12px;
+    font-size: 16px;
 }
-.menu-a-style{  
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 25px;
-    font-size: 20px;
+.box-menu{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: fixed;
+    width: 100px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(185, 185, 185, 0.432);
+    transition: width 1000ms;
+}
+.box-menu:hover{
+    background-color: rgba(255, 68, 68, 0.425);
+    transition: 1000ms;
+    width: 110px;
+}
+.menu-pro{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+.menu-pro:hover{
+    color: black;
+}
+.menu-text{
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: black;
     
 }
 
-.menu-a-style:hover{ 
-    color: rgb(95, 88, 88);
-
-}
-
-    
-.style-icon{
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-.up-ambiental{
-    width: 200px;
-    position: absolute;
-    display: block;
-
-} 
-.main-nav-two{
-    width: 100%;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    box-shadow: inset 2px  15px 15px rgba(0, 0, 0, 0.096);
-    margin-top: auto;
-    padding-right: 50%;
-}
-.main-nav-two li{
-    margin-right: 20px;
-    background-color: rgba(180, 180, 180, 0.247);
-    padding-bottom: 5px;
-    padding-left: auto;
-    float: left;
-    margin-left: 15px;
-    border-radius: 2px;
-}
-.main-nav-two li:hover{
-    background-color: rgba(100, 100, 100, 0.301);
-}
-.menu-a-two{
-    color: rgb(68, 68, 68);
-    text-decoration: none;
-    padding: 25px;
-    font-size: 18px;
-}
-
-.menu-a-two:hover{
-    color: rgb(255, 255, 255);
-}
-
-
-@media only screen and (max-width: 950px){
-    .main-nav {
-        position: fixed;
-        top: 0;
+@media only screen and (max-width: 950px) {
+    .box-1 {
+        background-image: linear-gradient(to right, #59C173, #a17fe0, #5D26C1);
+        display: grid;
+        grid-template: "box-presentacion"
+                        "box-imagen" / 
+                        1fr;
     }
-    .bar-menu{
-        display: block;
-        color: rgb(0, 0, 0);
-        font-size: 1.6em;
-        padding-top: 8px;
-        padding-left: 25px;
-    }
-    .menu-responsive {
-        display: flex;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.8);
-        margin: 8px;
-        margin-left: auto;
-        margin-right: 50%;
-        padding: 0px;
-        padding-bottom: 100%;
-
-    }
-    .menu-responsive li {
-        padding: 20px;
-    }
-    .menu-responsive li:hover {
-        background: rgba(77, 75, 75, 0.8);
-        margin-top: auto;
-    }
-    .menu-responsive li:hover a {
-        color: rgb(255, 255, 255);
-    }
-    .menu-horiz {
-        display: none;
-    }
-    .menu-a-style {
-        color: rgb(168, 168, 168);
-    }
-    .fa-solid{
-        cursor: pointer;
-    }
-    .up-ambiental{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 950px){
-    .content-main-two{   
+    .box-presentacion {
         margin-top: 60px;
     }
-
+    .box-imagen {
+        margin-bottom: 150px;
+        padding-top: 60px;
+    }
+    .img-yo{
+        width: 300px;
+    }
 }
+
+/* bebas-neue-regular - latin */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v9-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/bebas-neue-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bebas-neue-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bebas-neue-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+  }
+
+/* dancing-script-regular - latin */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dancing-script-v24-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/dancing-script-v24-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dancing-script-v24-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dancing-script-v24-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/dancing-script-v24-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dancing-script-v24-latin-regular.svg#DancingScript') format('svg'); /* Legacy iOS */
+  }
+
+/* quicksand-regular - latin */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/quicksand-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/quicksand-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/quicksand-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/quicksand-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/quicksand-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/quicksand-v30-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+  } 
+
+/* lexend-deca-regular - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lexend-deca-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/lexend-deca-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lexend-deca-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/lexend-deca-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lexend-deca-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/lexend-deca-v17-latin-regular.svg#LexendDeca') format('svg'); /* Legacy iOS */
+  }
